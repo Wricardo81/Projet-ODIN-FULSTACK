@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('fonts/font-family/Norsebold.otf') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #596D48;
+    --error-red: #EF4444;
+    --focus-blue: #2563EB;
+    --border-light: #E5E7EB;
+    --overlay-black: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.sidebar {
+    flex: 1 1 35%;
+    background-image: url('fonts/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.action-area {
+    background-color: #f9fafb;
+    padding: 20px 40px;
+}
+
+.logo-container {
+    background-color: var(--overlay-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    gap: 15px;
+}
+
+.logo-container img {
+    height: 80px;
+}
+
+.logo-container h1 {
+    color: white;
+    font-size: 8rem;
+    font-family: 'Norse Bold', serif;
+    letter-spacing: 9px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.credits a {
+    color: white;
+    text-decoration: underline;
+}
+
+.credits img {
+    height: 300px;
+    margin-top: 500px;
+    border-radius: 8px;
+}
+
+.credits img {
+    display: none;
+}
+
+.content {
+    flex: 1 1 65%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+}
+
+header {
+    padding: 60px 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+form {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+    padding: 30px 40px;
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
+    gap: 25px 40px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #4B5563;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+/* Pseudo-classes solicitadas */
+input:focus {
+    outline: none;
+    border-color: var(--focus-blue);
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: var(--error-red);
+}
+
+button {
+    margin: 20px 0; /* Ajustado */
+    padding: 15px 50px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #4a5d3b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+footer {
+    padding: 20px 40px;
+    color: #4B5563;
+}
+
+footer a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+}

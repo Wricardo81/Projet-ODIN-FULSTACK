@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Odin - Inscrição</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="sidebar">
+      <div class="logo-container">
+        <img src="fonts/log.odin.png" alt="Odin Logo">
+        <h1>ODIN</h1>
+      </div>
+      <div class="credits">
+        Foto de <a href="https://unsplash.com/@bechinina">Adele Erolsky</a> no <a href="https://unsplash.com/">Unsplash</a>
+      </div>
+    </section>
+
+    <section class="content">
+      <header>
+        <p>Este não é um serviço real... mas você sabia que aprender CSS abre portas para o Full-stack?</p>
+      </header>
+      
+      <form action="https://www.theodinproject.com/dashboard" method="post">
+        <div class="form-card">
+          <h2>Vamos fazer isso!</h2>
+          
+          <div class="input-group">
+            <div class="field">
+              <label for="first_name">Primeiro Nome</label>
+              <input type="text" id="first_name" name="first_name" required placeholder=" ">
+            </div>
+            <div class="field">
+              <label for="last_name">Sobrenome</label>
+              <input type="text" id="last_name" name="last_name" required placeholder=" ">
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required placeholder=" ">
+            </div>
+            <div class="field">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder=" ">
+            </div>
+            <div class="field">
+              <label for="password">Senha</label>
+              <input type="password" id="password" name="password" required minlength="6" placeholder=" ">
+            </div>
+            <div class="field">
+              <label for="confirm_password">Confirme a Senha</label>
+              <input type="password" id="confirm_password" name="confirm_password" required placeholder=" ">
+            </div>
+          </div>
+        </div>
+
+        <div class="action-area">
+          <button type="submit">Criar Conta</button>
+          <footer>
+            Já possui uma conta? <a href="#">Fazer login</a>
+          </footer>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
